@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onrail - On-chain rails for real estate finance</title>
+    <meta name="description" content="Onrail provides on-chain rails for real estate finance, revolutionizing property investment through blockchain technology.">
+    <meta name="keywords" content="onrail, blockchain, real estate, finance, on-chain, property investment, fintech">
+    <meta name="author" content="Onrail">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onrail.com/">
+    <meta property="og:title" content="Onrail - On-chain rails for real estate finance">
+    <meta property="og:description" content="Onrail provides on-chain rails for real estate finance, revolutionizing property investment through blockchain technology.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://onrail.com/">
+    <meta property="twitter:title" content="Onrail - On-chain rails for real estate finance">
+    <meta property="twitter:description" content="Onrail provides on-chain rails for real estate finance, revolutionizing property investment through blockchain technology.">
+    
+    <link rel="canonical" href="https://onrail.com/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* Updated font family to use Verdana and modern system fonts */
+            font-family: Verdana, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #ffffff;
+            /* Updated light mode text color to #060E35 */
+            color: #060E35;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+        
+        body.dark {
+            /* Updated dark mode background color to #060E35 */
+            background-color: #060E35;
+            color: #ffffff;
+        }
+        
+        /* Made toggle button more subtle */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.05);
+            border: none;
+            border-radius: 20px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .theme-toggle:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+        
+        body.dark .theme-toggle {
+            background: rgba(255,255,255,0.1);
+            color: #ffffff;
+        }
+        
+        body.dark .theme-toggle:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        
+        .logo {
+            width: 300px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.4;
+            max-width: 600px;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                width: 250px;
+            }
+            
+            .tagline {
+                font-size: 1.25rem;
+            }
+            
+            .theme-toggle {
+                top: 15px;
+                right: 15px;
+                padding: 6px 10px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                width: 200px;
+            }
+            
+            .tagline {
+                font-size: 1.125rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">🌙</button>
+    
+    <!-- Embedded SVG logos directly in HTML -->
+    <div class="logo" id="logo">
+        <svg id="lightLogo" width="300" height="69" viewBox="0 0 1741 399" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-779 -971)">
+                <path d="M1165.02 1177.03C1165.02 1233.41 1146.85 1279.33 1110.56 1314.83 1074.24 1350.33 1027.82 1368.07 971.275 1368.07 915.647 1368.07 870.023 1350.6 834.382 1315.63 798.789 1280.6 781.018 1235.11 781.018 1179.12 781.018 1142.23 788.908 1109.2 804.713 1080.01 820.567 1050.84 843.242 1028.06 872.711 1011.7 902.231 995.3 936.281 987.075 974.86 987.075 1031.06 987.075 1076.81 1004.32 1112.05 1038.83 1147.35 1073.28 1165.02 1119.34 1165.02 1177.03ZM848.519 1175.03C848.519 1214.32 859.993 1246.6 882.966 1271.85 905.99 1297.13 935.932 1309.74 972.769 1309.74 1009.26 1309.74 1039.17 1297.38 1062.47 1272.65 1085.82 1247.87 1097.52 1215.32 1097.52 1175.03 1097.52 1137.81 1085.92 1106.9 1062.77 1082.3 1039.6 1057.72 1009.43 1045.41 972.271 1045.41 937.151 1045.41 907.756 1057.55 884.062 1081.8 860.366 1106.08 848.519 1137.14 848.519 1175.03Z" fill="#060E35"/>
+                <path d="M1330.54 1107.07C1358.54 1107.07 1380.44 1115.45 1396.25 1132.2 1412.1 1148.91 1420.04 1172.09 1420.04 1201.81L1420.04 1359.07 1358.71 1359.07 1358.71 1231.53C1358.71 1185.41 1343.71 1162.32 1313.72 1162.32 1296.32 1162.32 1282.58 1167.98 1272.5 1179.27 1262.47 1190.52 1257.47 1205.38 1257.47 1223.85L1257.47 1359.07 1196.04 1359.07 1196.04 1113.16 1254.38 1113.16 1254.38 1152.65 1255.38 1152.65C1269.36 1122.28 1294.43 1107.07 1330.54 1107.07Z" fill="#060E35"/>
+                <path d="M1599.05 1107.07C1604.23 1107.07 1611.55 1108.27 1621.06 1110.66L1621.06 1170C1610.5 1166.96 1600.6 1165.41 1591.39 1165.41 1571.28 1165.41 1555.25 1171.4 1543.3 1183.36 1531.4 1195.33 1525.48 1211.23 1525.48 1231.03L1525.48 1359.07 1464.06 1359.07 1464.06 1113.16 1525.48 1113.16 1525.48 1152.15 1526.48 1152.15C1533.3 1137.79 1543.03 1126.69 1555.65 1118.84 1568.24 1111.01 1582.73 1107.07 1599.05 1107.07Z" fill="#060E35"/>
+                <path d="M1742.23 1107.07C1777.33 1107.07 1803.58 1115.52 1820.98 1132.39 1838.35 1149.28 1847.07 1175.81 1847.07 1212.01L1847.07 1358.9 1791.81 1358.9 1791.81 1325.11 1790.32 1325.11C1773.59 1351.77 1747.33 1365.07 1711.57 1365.07 1684.94 1365.07 1663.38 1358.17 1646.86 1344.35 1630.33 1330.55 1622.07 1312.86 1622.07 1291.33 1622.07 1262.63 1633.96 1241.21 1657.81 1227.06 1681.7 1212.91 1720.05 1205.83 1772.9 1205.83L1791.81 1205.83 1791.81 1198.66C1791.81 1184.31 1786.68 1173.14 1776.48 1165.17 1766.25 1157.15 1752.61 1153.11 1735.56 1153.11 1710.32 1153.11 1688.52 1161.66 1670.15 1178.72L1637.9 1146.44C1663.43 1120.2 1698.23 1107.07 1742.23 1107.07ZM1683.39 1286.75C1683.39 1297.31 1687.72 1305.33 1696.43 1310.76 1705.12 1316.22 1715.28 1318.94 1726.9 1318.94 1748.06 1318.94 1763.56 1313.75 1773.39 1303.39 1783.27 1292.98 1788.23 1279.92 1788.23 1264.23L1788.23 1248.88 1770.41 1248.88C1712.39 1248.88 1683.39 1261.51 1683.39 1286.75Z" fill="#060E35"/>
+                <path d="M1919.64 993.075C1930.73 993.075 1940.07 996.612 1947.64 1003.64 1955.26 1010.61 1959.08 1019.38 1959.08 1029.94 1959.08 1040.85 1955.18 1049.72 1947.44 1056.55 1939.68 1063.4 1930.41 1066.81 1919.64 1066.81 1908.79 1066.81 1899.64 1063.18 1892.22 1055.85 1884.78 1048.48 1881.08 1039.86 1881.08 1029.94 1881.08 1020.05 1884.78 1011.46 1892.22 1004.14 1899.64 996.761 1908.79 993.075 1919.64 993.075ZM1950.5 1113.35 1950.5 1359.07 1889.76 1359.07 1889.76 1113.35Z" fill="#060E35"/>
+                <path d="M2059.09 972.075 2059.09 1359.07 1997.09 1359.07 1997.09 972.075Z" fill="#060E35"/>
+                <path d="M2113.09 985.053 2518.09 985.053 2518.09 1037.05 2113.09 1037.05Z" fill="#060E35"/>
+                <path d="M2113.09 1095.06 2518.09 1095.06 2518.09 1146.06 2113.09 1146.06Z" fill="#060E35"/>
+                <path d="M2113.09 1204.07 2518.09 1204.07 2518.09 1256.07 2113.09 1256.07Z" fill="#2CFE91"/>
+                <path d="M2113.09 1314.07 2518.09 1314.07 2518.09 1365.07 2113.09 1365.07Z" fill="#2CFE91"/>
+            </g>
+        </svg>
+        
+        <svg id="darkLogo" width="300" height="69" viewBox="0 0 1741 399" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <g transform="translate(-779 -971)">
+                <path d="M1165.02 1177.03C1165.02 1233.41 1146.85 1279.33 1110.56 1314.83 1074.24 1350.33 1027.82 1368.07 971.275 1368.07 915.647 1368.07 870.023 1350.6 834.382 1315.63 798.789 1280.6 781.018 1235.11 781.018 1179.12 781.018 1142.23 788.908 1109.2 804.713 1080.01 820.567 1050.84 843.242 1028.06 872.711 1011.7 902.231 995.3 936.281 987.075 974.86 987.075 1031.06 987.075 1076.81 1004.32 1112.05 1038.83 1147.35 1073.28 1165.02 1119.34 1165.02 1177.03ZM848.519 1175.03C848.519 1214.32 859.993 1246.6 882.966 1271.85 905.99 1297.13 935.932 1309.74 972.769 1309.74 1009.26 1309.74 1039.17 1297.38 1062.47 1272.65 1085.82 1247.87 1097.52 1215.32 1097.52 1175.03 1097.52 1137.81 1085.92 1106.9 1062.77 1082.3 1039.6 1057.72 1009.43 1045.41 972.271 1045.41 937.151 1045.41 907.756 1057.55 884.062 1081.8 860.366 1106.08 848.519 1137.14 848.519 1175.03Z" fill="#FFFFFF"/>
+                <path d="M1330.54 1107.07C1358.54 1107.07 1380.44 1115.45 1396.25 1132.2 1412.1 1148.91 1420.04 1172.09 1420.04 1201.81L1420.04 1359.07 1358.71 1359.07 1358.71 1231.53C1358.71 1185.41 1343.71 1162.32 1313.72 1162.32 1296.32 1162.32 1282.58 1167.98 1272.5 1179.27 1262.47 1190.52 1257.47 1205.38 1257.47 1223.85L1257.47 1359.07 1196.04 1359.07 1196.04 1113.16 1254.38 1113.16 1254.38 1152.65 1255.38 1152.65C1269.36 1122.28 1294.43 1107.07 1330.54 1107.07Z" fill="#FFFFFF"/>
+                <path d="M1599.05 1107.07C1604.23 1107.07 1611.55 1108.27 1621.06 1110.66L1621.06 1170C1610.5 1166.96 1600.6 1165.41 1591.39 1165.41 1571.28 1165.41 1555.25 1171.4 1543.3 1183.36 1531.4 1195.33 1525.48 1211.23 1525.48 1231.03L1525.48 1359.07 1464.06 1359.07 1464.06 1113.16 1525.48 1113.16 1525.48 1152.15 1526.48 1152.15C1533.3 1137.79 1543.03 1126.69 1555.65 1118.84 1568.24 1111.01 1582.73 1107.07 1599.05 1107.07Z" fill="#FFFFFF"/>
+                <path d="M1742.23 1107.07C1777.33 1107.07 1803.58 1115.52 1820.98 1132.39 1838.35 1149.28 1847.07 1175.81 1847.07 1212.01L1847.07 1358.9 1791.81 1358.9 1791.81 1325.11 1790.32 1325.11C1773.59 1351.77 1747.33 1365.07 1711.57 1365.07 1684.94 1365.07 1663.38 1358.17 1646.86 1344.35 1630.33 1330.55 1622.07 1312.86 1622.07 1291.33 1622.07 1262.63 1633.96 1241.21 1657.81 1227.06 1681.7 1212.91 1720.05 1205.83 1772.9 1205.83L1791.81 1205.83 1791.81 1198.66C1791.81 1184.31 1786.68 1173.14 1776.48 1165.17 1766.25 1157.15 1752.61 1153.11 1735.56 1153.11 1710.32 1153.11 1688.52 1161.66 1670.15 1178.72L1637.9 1146.44C1663.43 1120.2 1698.23 1107.07 1742.23 1107.07ZM1683.39 1286.75C1683.39 1297.31 1687.72 1305.33 1696.43 1310.76 1705.12 1316.22 1715.28 1318.94 1726.9 1318.94 1748.06 1318.94 1763.56 1313.75 1773.39 1303.39 1783.27 1292.98 1788.23 1279.92 1788.23 1264.23L1788.23 1248.88 1770.41 1248.88C1712.39 1248.88 1683.39 1261.51 1683.39 1286.75Z" fill="#FFFFFF"/>
+                <path d="M1919.64 993.075C1930.73 993.075 1940.07 996.612 1947.64 1003.64 1955.26 1010.61 1959.08 1019.38 1959.08 1029.94 1959.08 1040.85 1955.18 1049.72 1947.44 1056.55 1939.68 1063.4 1930.41 1066.81 1919.64 1066.81 1908.79 1066.81 1899.64 1063.18 1892.22 1055.85 1884.78 1048.48 1881.08 1039.86 1881.08 1029.94 1881.08 1020.05 1884.78 1011.46 1892.22 1004.14 1899.64 996.761 1908.79 993.075 1919.64 993.075ZM1950.5 1113.35 1950.5 1359.07 1889.76 1359.07 1889.76 1113.35Z" fill="#FFFFFF"/>
+                <path d="M2059.09 972.075 2059.09 1359.07 1997.09 1359.07 1997.09 972.075Z" fill="#FFFFFF"/>
+                <path d="M2113.09 985.053 2518.09 985.053 2518.09 1037.05 2113.09 1037.05Z" fill="#FFFFFF"/>
+                <path d="M2113.09 1095.06 2518.09 1095.06 2518.09 1146.06 2113.09 1146.06Z" fill="#FFFFFF"/>
+                <path d="M2113.09 1204.07 2518.09 1204.07 2518.09 1256.07 2113.09 1256.07Z" fill="#2CFE91"/>
+                <path d="M2113.09 1314.07 2518.09 1314.07 2518.09 1365.07 2113.09 1365.07Z" fill="#2CFE91"/>
+            </g>
+        </svg>
+    </div>
+    
+    <h1 class="tagline">On-chain rails for real estate finance</h1>
+    
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const lightLogo = document.getElementById('lightLogo');
+            const darkLogo = document.getElementById('darkLogo');
+            const toggle = document.getElementById('themeToggle');
+            
+            body.classList.toggle('dark');
+            
+            if (body.classList.contains('dark')) {
+                lightLogo.style.display = 'none';
+                darkLogo.style.display = 'block';
+                toggle.innerHTML = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                lightLogo.style.display = 'block';
+                darkLogo.style.display = 'none';
+                toggle.innerHTML = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                toggleTheme();
+            }
+        });
+    </script>
+</body>
+</html>
